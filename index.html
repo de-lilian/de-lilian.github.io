@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lílian de Sardenberg Schmid — Data Scientist</title>
-  <meta name="description" content="Lílian de Sardenberg Schmid — data scientist and neuroscience PhD. Statistical modelling, machine learning, and finding signal in large, noisy, high-dimensional data." />
+  <title>Lílian de Sardenberg Schmid — Neuroscientist & Data Scientist</title>
+  <meta name="description" content="Lílian de Sardenberg Schmid — PhD candidate in neuroscience at the Max Planck Institute for Biological Cybernetics. Computational neuroscience, data science, and zebrafish foraging behavior." />
   <meta name="author" content="Lílian de Sardenberg Schmid" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Lílian de Sardenberg Schmid" />
-  <meta property="og:description" content="Data scientist & neuroscience PhD — statistical modelling, machine learning, and signal in large, noisy data." />
+  <meta property="og:description" content="Neuroscientist & data scientist studying how the brain integrates internal dynamics with a changing environment." />
   <meta property="og:type" content="website" />
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%9F%3C/text%3E%3C/svg%3E" />
@@ -28,13 +28,16 @@
     <div class="nav__inner">
       <a href="#home" class="nav__brand">Lílian<span class="dot">.</span></a>
       <div class="nav__links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#research">Work</a>
-        <a href="#publications">Publications</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-en="About" data-de="Über mich">About</a>
+        <a href="#research" data-en="Research" data-de="Forschung">Research</a>
+        <a href="#publications" data-en="Publications" data-de="Publikationen">Publications</a>
+        <a href="#skills" data-en="Skills" data-de="Kompetenzen">Skills</a>
+        <a href="#contact" data-en="Contact" data-de="Kontakt">Contact</a>
       </div>
       <div class="nav__tools">
+        <button class="lang-btn" id="langBtn" title="Switch language" aria-label="Switch language">
+          <span class="active-lang" id="langLabel">EN</span> / <span id="langAlt">DE</span>
+        </button>
         <button class="icon-btn" id="themeBtn" title="Toggle theme" aria-label="Toggle theme">◐</button>
         <button class="nav__burger" id="burger" aria-label="Menu">☰</button>
       </div>
@@ -47,21 +50,23 @@
       <div class="hero__inner">
         <span class="hero__eyebrow">
           <span class="pulse"></span>
-          <span>Tübingen, Germany · open to relocation</span>
+          <span data-en="Based in Tübingen, Germany" data-de="Tübingen, Deutschland">Based in Tübingen, Germany</span>
         </span>
         <h1>
-          <span>Hi, I'm</span>
+          <span data-en="Hi, I'm" data-de="Hallo, ich bin">Hi, I'm</span>
           <span class="accent">Lílian</span>
         </h1>
         <div class="hero__role">
           <span class="typed" id="typed"></span><span class="cursor">&nbsp;</span>
         </div>
-        <p class="hero__lead">
-          I'm a data scientist and neuroscience PhD researcher. I find signal in large, noisy, high-dimensional data — building statistical and machine-learning pipelines that run from cleaning and validation through modelling to visualisation. I'm now bringing that toolkit to quantitative research in financial markets.
+        <p class="hero__lead"
+           data-en="I'm a PhD researcher in neuroscience and a data scientist. I study how the brain integrates its own internal dynamics with a constantly changing environment — using whole-brain imaging, behavior, and computation to make sense of noisy, high-dimensional data."
+           data-de="Ich bin Doktorandin in den Neurowissenschaften und Data Scientist. Ich erforsche, wie das Gehirn seine eigene innere Dynamik mit einer sich ständig verändernden Umwelt verbindet — mithilfe von Ganzhirn-Bildgebung, Verhaltensanalyse und Computermethoden für verrauschte, hochdimensionale Daten.">
+          I'm a PhD researcher in neuroscience and a data scientist. I study how the brain integrates its own internal dynamics with a constantly changing environment — using whole-brain imaging, behavior, and computation to make sense of noisy, high-dimensional data.
         </p>
         <div class="hero__cta">
-          <a href="#contact" class="btn btn--primary">Get in touch</a>
-          <a href="#research" class="btn btn--ghost">View work</a>
+          <a href="#contact" class="btn btn--primary" data-en="Get in touch" data-de="Kontakt aufnehmen">Get in touch</a>
+          <a href="#research" class="btn btn--ghost" data-en="View research" data-de="Forschung ansehen">View research</a>
         </div>
         <div class="hero__socials">
           <a href="mailto:desardenbergschmid@gmail.com" title="Email" aria-label="Email">
@@ -82,54 +87,57 @@
   <section class="section" id="about">
     <div class="container">
       <div class="section__head reveal">
-        <span class="section__kicker">About</span>
-        <h2 class="section__title">Finding signal in large, noisy, high-dimensional data</h2>
+        <span class="section__kicker" data-en="About" data-de="Über mich">About</span>
+        <h2 class="section__title" data-en="Making sense of the loop between a brain and its surrounding world" data-de="Verstehen, wie Gehirn und Umwelt ineinandergreifen">Making sense of the loop between a brain and its surrounding world</h2>
       </div>
       <div class="about">
         <div class="about__body reveal">
-          <p>
-            I'm a doctoral researcher at the <strong>Max Planck Institute for Biological Cybernetics</strong> in Tübingen, in the <strong>Systems Neuroscience &amp; Neuroengineering</strong> group of Drew Robson and Jennifer Li. My PhD builds statistical and machine-learning models of behaviour and brain-wide activity — decoding hidden states from large, noisy recordings.
+          <p data-en="I'm a doctoral researcher at the <strong>Max Planck Institute for Biological Cybernetics</strong> in Tübingen, in the <strong>Systems Neuroscience &amp; Neuroengineering</strong> group of Drew Robson and Jennifer Li. My PhD asks how animals decide when and where to forage — and how the brain weighs its own internal state against changing resources in the outside world."
+             data-de="Ich bin Doktorandin am <strong>Max-Planck-Institut für biologische Kybernetik</strong> in Tübingen, in der Gruppe <strong>Systems Neuroscience &amp; Neuroengineering</strong> von Drew Robson und Jennifer Li. In meiner Promotion untersuche ich, wie Tiere entscheiden, wann und wo sie auf Nahrungssuche gehen — und wie das Gehirn den eigenen inneren Zustand gegen sich verändernde Ressourcen in der Außenwelt abwägt.">
+            I'm a doctoral researcher at the <strong>Max Planck Institute for Biological Cybernetics</strong> in Tübingen, in the <strong>Systems Neuroscience &amp; Neuroengineering</strong> group of Drew Robson and Jennifer Li. My PhD asks how animals decide when and where to forage — and how the brain weighs its own internal state against changing resources in the outside world.
           </p>
-          <p>
-            Day to day, that means a lot of code: reproducible pipelines in <strong>Python and Julia</strong>, wrangling large-scale time-series, and turning them into decoding models, dimensionality reductions, and honest, cross-validated results. I care about statistical rigour — permutation testing, multiple-comparison correction, and avoiding data leakage.
+          <p data-en="I work with larval zebrafish because they let me record <strong>whole-brain activity</strong> while an animal freely behaves. Day to day, that means a lot of code: building analysis pipelines in <strong>Julia and Python</strong>, wrangling large-scale neural and behavioral data, and turning it into decoding models, dimensionality reductions, and visualizations that actually tell a story."
+             data-de="Ich arbeite mit Zebrafisch-Larven, weil sie es erlauben, die <strong>Aktivität des gesamten Gehirns</strong> während des freien Verhaltens aufzuzeichnen. Im Alltag bedeutet das viel Code: Analyse-Pipelines in <strong>Julia und Python</strong>, die Aufbereitung großer neuronaler und Verhaltensdatensätze und deren Übersetzung in Dekodierungsmodelle, Dimensionsreduktionen und aussagekräftige Visualisierungen.">
+            I work with larval zebrafish because they let me record <strong>whole-brain activity</strong> while an animal freely behaves. Day to day, that means a lot of code: building analysis pipelines in <strong>Julia and Python</strong>, wrangling large-scale neural and behavioral data, and turning it into decoding models, dimensionality reductions, and visualizations that actually tell a story.
           </p>
-          <p>
-            I'm drawn to <strong>quantitative finance</strong> because it's the same core problem: extracting signal from large, noisy, fast-changing data. Outside research I've been a long-term ETF investor for years, and I'm keen to bring a scientific, evidence-based approach to financial markets.
+          <p data-en="Before the PhD I trained in <strong>cognitive science</strong> and <strong>neural &amp; behavioural sciences</strong>, with a study abroad in Brazil and detours through eye-tracking, EEG, and microscopy. I like being a generalist: bridging experiments, engineering, and analysis — and explaining complex ideas so different people can act on them."
+             data-de="Vor der Promotion habe ich <strong>Kognitionswissenschaft</strong> sowie <strong>Neural &amp; Behavioural Sciences</strong> studiert, mit einem Auslandsaufenthalt in Brasilien und Ausflügen in Eye-Tracking, EEG und Mikroskopie. Ich bin gern Generalistin: eine Brücke zwischen Experiment, Technik und Analyse — und ich erkläre komplexe Ideen so, dass verschiedene Menschen damit arbeiten können.">
+            Before the PhD I trained in <strong>cognitive science</strong> and <strong>neural &amp; behavioural sciences</strong>, with a study abroad in Brazil and detours through eye-tracking, EEG, and microscopy. I like being a generalist: bridging experiments, engineering, and analysis — and explaining complex ideas so different people can act on them.
           </p>
         </div>
         <aside class="about__facts reveal">
           <div class="fact">
             <span class="fact__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
             <div>
-              <div class="fact__label">Location</div>
-              <div class="fact__value">Tübingen · open to relocation</div>
+              <div class="fact__label" data-en="Location" data-de="Standort">Location</div>
+              <div class="fact__value">Tübingen, Germany</div>
             </div>
           </div>
           <div class="fact">
             <span class="fact__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M6 21V7l6-4 6 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/></svg></span>
             <div>
-              <div class="fact__label">Institute</div>
+              <div class="fact__label" data-en="Institute" data-de="Institut">Institute</div>
               <div class="fact__value">MPI for Biological Cybernetics</div>
             </div>
           </div>
           <div class="fact">
             <span class="fact__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></span>
             <div>
-              <div class="fact__label">Role</div>
-              <div class="fact__value">PhD Candidate · Data Scientist</div>
+              <div class="fact__label" data-en="Role" data-de="Rolle">Role</div>
+              <div class="fact__value" data-en="PhD Candidate · Data Scientist" data-de="Doktorandin · Data Scientist">PhD Candidate · Data Scientist</div>
             </div>
           </div>
           <div class="fact">
             <span class="fact__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14.5 4l-5 16"/></svg></span>
             <div>
-              <div class="fact__label">Focus</div>
-              <div class="fact__value">Statistics · ML · Modelling</div>
+              <div class="fact__label" data-en="Focus" data-de="Schwerpunkt">Focus</div>
+              <div class="fact__value" data-en="Neural computation · Behavior" data-de="Neuronale Berechnung · Verhalten">Neural computation · Behavior</div>
             </div>
           </div>
           <div class="fact">
             <span class="fact__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/><circle cx="12" cy="12" r="10"/></svg></span>
             <div>
-              <div class="fact__label">Languages</div>
+              <div class="fact__label" data-en="Languages" data-de="Sprachen">Languages</div>
               <div class="fact__value">DE · PT · EN · ES · FR</div>
             </div>
           </div>
@@ -138,13 +146,13 @@
     </div>
   </section>
 
-  <!-- ============ WORK / PROJECTS ============ -->
+  <!-- ============ RESEARCH ============ -->
   <section class="section section--alt" id="research">
     <div class="container">
       <div class="section__head reveal">
-        <span class="section__kicker">Work</span>
-        <h2 class="section__title">Selected work</h2>
-        <p class="section__sub">Extracting structure from large, noisy datasets — models, statistics, and the pipelines that make them reproducible.</p>
+        <span class="section__kicker" data-en="Research" data-de="Forschung">Research</span>
+        <h2 class="section__title" data-en="Selected projects" data-de="Ausgewählte Projekte">Selected projects</h2>
+        <p class="section__sub" data-en="From single-fish foraging decisions to brain-wide activity — building the tools and the analysis along the way." data-de="Von den Nahrungssuche-Entscheidungen einzelner Fische bis zur hirnweiten Aktivität — inklusive der dafür nötigen Werkzeuge und Analysen.">From single-fish foraging decisions to brain-wide activity — building the tools and the analysis along the way.</p>
       </div>
       <div class="cards">
 
@@ -153,11 +161,11 @@
             <span class="card__icon">🧠</span>
             <span class="card__year">PhD · Ongoing</span>
           </div>
-          <h3>Decoding brain states from large, noisy recordings</h3>
-          <div class="card__tags"><span>Python / Julia</span><span>Decoding</span><span>Cross-validation</span></div>
-          <p>Modular pipelines that decode behavioural and environmental states from whole-brain recordings (thousands of units × time): PCA, SVM and logistic-regression classifiers, permutation testing with FDR correction, and strict train/test separation to avoid leakage.</p>
+          <h3 data-en="Internal brain dynamics during zebrafish foraging" data-de="Innere Hirndynamik bei der Nahrungssuche von Zebrafischen">Internal brain dynamics during zebrafish foraging</h3>
+          <div class="card__tags"><span>Whole-brain imaging</span><span>Behavior</span><span>Julia</span></div>
+          <p data-en="My core PhD project: how the brain integrates internal state and changing environmental resources to drive foraging decisions, combining brain-wide recordings with quantitative behavior." data-de="Mein Kern-Promotionsprojekt: Wie das Gehirn inneren Zustand und sich verändernde Umweltressourcen integriert, um Entscheidungen bei der Nahrungssuche zu steuern — mit hirnweiten Aufnahmen und quantitativer Verhaltensanalyse.">My core PhD project: how the brain integrates internal state and changing environmental resources to drive foraging decisions, combining brain-wide recordings with quantitative behavior.</p>
           <div class="card__links">
-            <a href="https://github.com/lilianateresia" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://scholar.google.com/citations?user=BFL_DBQAAAAJ&hl=en" target="_blank" rel="noopener" data-en="Google Scholar ↗" data-de="Google Scholar ↗">Google Scholar ↗</a>
           </div>
         </article>
 
@@ -166,9 +174,9 @@
             <span class="card__icon">🛌🏼</span>
             <span class="card__year">2026</span>
           </div>
-          <h3>Circadian organization of sleep substates</h3>
-          <div class="card__tags"><span>GMM</span><span>PyTorch</span><span>Cross-validation</span></div>
-          <p>Co-authored Nature Communications study: classifying sleep substates with Gaussian mixture models, modelling state probabilities with a PyTorch neural-network logistic regression (cross-validated, with input-ablation importance), and decoding time with a regularized linear decoder.</p>
+          <h3 data-en="Organization of day- and night-time sleep in zebrafish" data-de="Organisation des REM-Schlafs bei Zebrafischen">Organization of REM sleep in zebrafish</h3>
+          <div class="card__tags"><span>Neural recordings</span><span>Behavior</span><span>Sleep</span></div>
+          <p data-en="Co-authored work mapping the neural and behavioral organization of different sleep sub-types in larval zebrafish, revealing distinct quiescent brain states." data-de="Ko-Autorenschaft an einer Arbeit, die die neuronale und verhaltensbezogene Organisation des Tag- und Nacht-Schlafs bei Zebrafisch-Larven kartiert und unterschiedliche Ruhezustände des Gehirns aufzeigt.">Co-authored work mapping the neural and behavioral organization of rapid-eye-movement sleep in larval zebrafish, revealing distinct quiescent brain states.</p>
           <div class="card__links">
             <a href="https://www.nature.com/articles/s41467-026-72222-0" target="_blank" rel="noopener">Nature Communications ↗</a>
           </div>
@@ -179,11 +187,11 @@
             <span class="card__icon">👁️</span>
             <span class="card__year">2024</span>
           </div>
-          <h3>Individual variability &amp; stability in spatial memory</h3>
-          <div class="card__tags"><span>Statistics</span><span>Eye-tracking</span><span>Behaviour</span></div>
-          <p>First-author study: statistical analysis of eye-tracking data showing that individuals differ in memory-rehearsal strategy yet stay strikingly stable over time (test–retest). Published in Journal of Vision.</p>
+          <h3 data-en="Overt vs. covert rehearsal in a digital Corsi task" data-de="Offene vs. verdeckte Wiederholung in einer digitalen Corsi-Aufgabe">Overt vs. covert rehearsal in a digital Corsi task</h3>
+          <div class="card__tags"><span>Eye-tracking</span><span>Human cognition</span><span>Spatial memory</span></div>
+          <p data-en="First-author study on spatial working memory: individuals differ in whether they rehearse overtly or covertly, but each person's strategy is remarkably stable over time." data-de="Erstautorenschaft zu räumlichem Arbeitsgedächtnis: Menschen unterscheiden sich darin, ob sie offen oder verdeckt wiederholen, doch die Strategie jeder Person ist über die Zeit bemerkenswert stabil.">First-author study on spatial working memory: individuals differ in whether they rehearse overtly or covertly, but each person's strategy is remarkably stable over time.</p>
           <div class="card__links">
-            <a href="https://jov.arvojournals.org/article.aspx?articleid=2800634" target="_blank" rel="noopener">Journal of Vision ↗</a>
+            <a href="https://jov.arvojournals.org/article.aspx?articleid=2800634&__cf_chl_f_tk=Jue_Ewhb3jAySMi7W4vDFK3BEIvzaSwkCpIBMoPRq7g-1783106109-1.0.1.1-DJbI3TF1ouhf1A8G587dla6_I0OtaN4EJT3jXwwXhAE" target="_blank" rel="noopener" data-en="Journal of Vision ↗" data-de="Journal of Vision ↗">Journal of Vision ↗</a>
           </div>
         </article>
 
@@ -192,9 +200,9 @@
             <span class="card__icon">⚙️</span>
             <span class="card__year">Ongoing</span>
           </div>
-          <h3>Reproducible pipelines at cluster scale</h3>
+          <h3 data-en="Analysis pipelines for whole-brain imaging" data-de="Analyse-Pipelines für die Ganzhirn-Bildgebung">Analysis pipelines for whole-brain imaging</h3>
           <div class="card__tags"><span>Python</span><span>Julia</span><span>SLURM / HPC</span></div>
-          <p>Reproducible pipelines for large-scale imaging and behavioural data: preprocessing, dimensionality reduction, decoding, automated data-quality validation, and cluster-scale workload management.</p>
+          <p data-en="Building reproducible pipelines for large-scale calcium-imaging and behavioral data: registration, dimensionality reduction, decoding, and cluster-scale workload management." data-de="Aufbau reproduzierbarer Pipelines für großskalige Kalzium-Bildgebungs- und Verhaltensdaten: Registrierung, Dimensionsreduktion, Dekodierung und Workload-Management auf Cluster-Ebene.">Building reproducible pipelines for large-scale calcium-imaging and behavioral data: registration, dimensionality reduction, decoding, and cluster-scale workload management.</p>
           <div class="card__links">
             <a href="https://github.com/lilianateresia" target="_blank" rel="noopener">GitHub ↗</a>
           </div>
@@ -208,17 +216,17 @@
   <section class="section" id="publications">
     <div class="container">
       <div class="section__head reveal">
-        <span class="section__kicker">Publications</span>
-        <h2 class="section__title">Papers &amp; proceedings</h2>
+        <span class="section__kicker" data-en="Publications" data-de="Publikationen">Publications</span>
+        <h2 class="section__title" data-en="Papers &amp; proceedings" data-de="Artikel &amp; Beiträge">Papers &amp; proceedings</h2>
       </div>
       <div class="publist">
 
         <article class="pub reveal">
           <div class="pub__year">2026</div>
           <div class="pub__body">
-            <h4>Eye movement kinematics reveal novel circadian organization of sleep substates</h4>
-            <p class="pub__venue">Nature Communications, 17, 4068 (2026)</p>
-            <p class="pub__authors">Choudhary, V., Heller, C. R., Aimon, S., <span class="me">de Sardenberg Schmid, L.</span>, Li, J. M., &amp; Robson, D. N.</p>
+            <h4 data-en="Neural and behavioral organization of rapid eye movement sleep in zebrafish" data-de="Neuronale und verhaltensbezogene Organisation des REM-Schlafs bei Zebrafischen">Neural and behavioral organization of rapid eye movement sleep in zebrafish</h4>
+            <p class="pub__venue">Nature Communications (2026)</p>
+            <p class="pub__authors">Choudary, V., Heller, C. R., Aimon, S., <span class="me">de Sardenberg Schmid, L.</span>, Robson, D. N., &amp; Li, J. M.</p>
             <div class="pub__links"><a href="https://www.nature.com/articles/s41467-026-72222-0" target="_blank" rel="noopener">Nature Communications ↗</a></div>
           </div>
         </article>
@@ -226,18 +234,18 @@
         <article class="pub reveal">
           <div class="pub__year">2024</div>
           <div class="pub__body">
-            <h4>Inter-individual variability (but intra-individual stability) of overt versus covert rehearsal strategies in a digital Corsi task</h4>
+            <h4 data-en="Inter-individual variability (but intra-individual stability) of overt versus covert rehearsal strategies in a digital Corsi task" data-de="Interindividuelle Variabilität (aber intraindividuelle Stabilität) offener versus verdeckter Wiederholungsstrategien in einer digitalen Corsi-Aufgabe">Inter-individual variability (but intra-individual stability) of overt versus covert rehearsal strategies in a digital Corsi task</h4>
             <p class="pub__venue">Journal of Vision, 24(8), 2–2</p>
             <p class="pub__authors"><span class="me">de Sardenberg Schmid, L.</span>, &amp; Hardiess, G.</p>
-            <div class="pub__links"><a href="https://jov.arvojournals.org/article.aspx?articleid=2800634" target="_blank" rel="noopener">Journal of Vision ↗</a></div>
+            <div class="pub__links"><a href="https://jov.arvojournals.org/article.aspx?articleid=2800634&__cf_chl_f_tk=Jue_Ewhb3jAySMi7W4vDFK3BEIvzaSwkCpIBMoPRq7g-1783106109-1.0.1.1-DJbI3TF1ouhf1A8G587dla6_I0OtaN4EJT3jXwwXhAE" target="_blank" rel="noopener">Journal of Vision ↗</a></div>
           </div>
         </article>
 
         <article class="pub reveal">
           <div class="pub__year">2022</div>
           <div class="pub__body">
-            <h4>Integration of internal brain dynamics and changing environmental resources during zebrafish foraging</h4>
-            <p class="pub__venue">FENS Forum 2022, Paris — Conference presentation</p>
+            <h4 data-en="Integration of internal brain dynamics and changing environmental resources during zebrafish foraging" data-de="Integration innerer Hirndynamik und sich verändernder Umweltressourcen bei der Nahrungssuche von Zebrafischen">Integration of internal brain dynamics and changing environmental resources during zebrafish foraging</h4>
+            <p class="pub__venue" data-en="FENS Forum 2022, Paris — Conference presentation" data-de="FENS Forum 2022, Paris — Konferenzbeitrag">FENS Forum 2022, Paris — Conference presentation</p>
             <p class="pub__authors"><span class="me">de Sardenberg Schmid, L.</span>, Robson, D., &amp; Li, J.</p>
           </div>
         </article>
@@ -247,43 +255,43 @@
       <!-- talks + awards -->
       <div class="duo">
         <div class="mini reveal">
-          <h3><span class="ico">🎤</span><span>Invited talks</span></h3>
+          <h3><span class="ico">🎤</span><span data-en="Invited talks" data-de="Eingeladene Vorträge">Invited talks</span></h3>
           <div class="tline">
             <div class="tline__item">
               <div class="tline__date">May 2023</div>
-              <div class="tline__title">Calcium imaging — from molecules to whole-brain activity</div>
-              <div class="tline__meta">Tutorial · Bernstein Student Workshop Series</div>
+              <div class="tline__title" data-en="Calcium imaging — from molecules to whole-brain activity" data-de="Kalzium-Bildgebung — von Molekülen zur Ganzhirn-Aktivität">Calcium imaging — from molecules to whole-brain activity</div>
+              <div class="tline__meta" data-en="Tutorial · Bernstein Student Workshop Series" data-de="Tutorial · Bernstein Student Workshop Series">Tutorial · Bernstein Student Workshop Series</div>
             </div>
             <div class="tline__item">
               <div class="tline__date">May 2023</div>
-              <div class="tline__title">Internal dynamics &amp; environmental resources in foraging</div>
-              <div class="tline__meta">Talk · Bernstein Student Workshop Series</div>
+              <div class="tline__title" data-en="Internal dynamics &amp; environmental resources in foraging" data-de="Innere Dynamik &amp; Umweltressourcen bei der Nahrungssuche">Internal dynamics &amp; environmental resources in foraging</div>
+              <div class="tline__meta" data-en="Talk · Bernstein Student Workshop Series" data-de="Vortrag · Bernstein Student Workshop Series">Talk · Bernstein Student Workshop Series</div>
             </div>
             <div class="tline__item">
               <div class="tline__date">Apr 2023</div>
-              <div class="tline__title">Neural computation of environmental resources in foraging</div>
+              <div class="tline__title" data-en="Neural computation of environmental resources in foraging" data-de="Neuronale Berechnung von Umweltressourcen bei der Nahrungssuche">Neural computation of environmental resources in foraging</div>
               <div class="tline__meta">ENCODS 2023 · Faro, Portugal</div>
             </div>
           </div>
         </div>
 
         <div class="mini reveal">
-          <h3><span class="ico">🏆</span><span>Awards &amp; honors</span></h3>
+          <h3><span class="ico">🏆</span><span data-en="Awards &amp; honors" data-de="Auszeichnungen">Awards &amp; honors</span></h3>
           <div class="tline">
             <div class="tline__item">
               <div class="tline__date">May 2023</div>
-              <div class="tline__title">Best Talk Award — 1st place</div>
+              <div class="tline__title" data-en="Best Talk Award — 1st place" data-de="Best Talk Award — 1. Platz">Best Talk Award — 1st place</div>
               <div class="tline__meta">ENCODS · Faro, Portugal</div>
             </div>
             <div class="tline__item">
               <div class="tline__date">2022–2024</div>
               <div class="tline__title">IMPRS Scholarship</div>
-              <div class="tline__meta">International conference funding</div>
+              <div class="tline__meta" data-en="International conference funding" data-de="Förderung für internationale Konferenzen">International conference funding</div>
             </div>
             <div class="tline__item">
               <div class="tline__date">2020</div>
-              <div class="tline__title">Dean's List</div>
-              <div class="tline__meta">University of Tübingen</div>
+              <div class="tline__title" data-en="Dean's List" data-de="Dean's List">Dean's List</div>
+              <div class="tline__meta" data-en="University of Tübingen" data-de="Universität Tübingen">University of Tübingen</div>
             </div>
           </div>
         </div>
@@ -295,88 +303,75 @@
   <section class="section section--alt" id="skills">
     <div class="container">
       <div class="section__head reveal">
-        <span class="section__kicker">Skills</span>
-        <h2 class="section__title">Tools of the trade</h2>
-        <p class="section__sub">A quantitative toolkit for statistics, machine learning, and large-scale data — with room for the wet lab too.</p>
+        <span class="section__kicker" data-en="Skills" data-de="Kompetenzen">Skills</span>
+        <h2 class="section__title" data-en="Tools of the trade" data-de="Werkzeuge &amp; Methoden">Tools of the trade</h2>
+        <p class="section__sub" data-en="A generalist toolkit spanning code, data, experiments, and hardware." data-de="Ein breit aufgestellter Werkzeugkasten für Code, Daten, Experimente und Hardware.">A generalist toolkit spanning code, data, experiments, and hardware.</p>
       </div>
       <div class="skills">
 
         <div class="skillgroup reveal">
-          <h3><span class="ico">💻</span><span>Programming</span></h3>
+          <h3><span class="ico">💻</span><span data-en="Programming" data-de="Programmierung">Programming</span></h3>
           <div class="chips">
-            <span class="chip chip--lead">Python</span>
             <span class="chip chip--lead">Julia</span>
+            <span class="chip chip--lead">Python</span>
             <span class="chip">MATLAB</span>
             <span class="chip">Git / GitHub</span>
             <span class="chip">SLURM / HPC</span>
+            <span class="chip">Arduino / Teensy</span>
           </div>
         </div>
 
         <div class="skillgroup reveal">
-          <h3><span class="ico">📈</span><span>Statistics &amp; ML</span></h3>
+          <h3><span class="ico">📊</span><span data-en="Data &amp; ML" data-de="Daten &amp; ML">Data &amp; ML</span></h3>
           <div class="chips">
-            <span class="chip chip--lead">Cross-validation</span>
-            <span class="chip chip--lead">Permutation testing</span>
-            <span class="chip">Multiple-comparison correction</span>
-            <span class="chip">Regression</span>
-            <span class="chip">PCA / dim. reduction</span>
-            <span class="chip">SVM &amp; logistic regression</span>
-            <span class="chip">Gaussian mixture models</span>
-            <span class="chip">Lasso / regularization</span>
-            <span class="chip">Feature selection</span>
-          </div>
-        </div>
-
-        <div class="skillgroup reveal">
-          <h3><span class="ico">📊</span><span>Data &amp; tools</span></h3>
-          <div class="chips">
-            <span class="chip">pandas</span>
-            <span class="chip">NumPy</span>
-            <span class="chip">scikit-learn</span>
+            <span class="chip">Data wrangling</span>
+            <span class="chip">Decoding models</span>
+            <span class="chip">Linear regression</span>
+            <span class="chip">Dimensionality reduction</span>
+            <span class="chip">Data visualization</span>
             <span class="chip">matplotlib</span>
-            <span class="chip">HDF5</span>
-            <span class="chip">Large-scale time-series</span>
-            <span class="chip">Reproducible pipelines</span>
-            <span class="chip">Data validation</span>
           </div>
         </div>
 
         <div class="skillgroup reveal">
-          <h3><span class="ico">📉</span><span>Interests</span></h3>
-          <div class="chips">
-            <span class="chip chip--lead">Financial markets</span>
-            <span class="chip">Quantitative finance</span>
-            <span class="chip">ETF investing</span>
-          </div>
-        </div>
-
-        <div class="skillgroup reveal">
-          <h3><span class="ico">🔬</span><span>Experimental</span></h3>
+          <h3><span class="ico">🔬</span><span data-en="Experimental" data-de="Experimentell">Experimental</span></h3>
           <div class="chips">
             <span class="chip">Calcium imaging</span>
+            <span class="chip">Confocal microscopy</span>
             <span class="chip">Eye-tracking</span>
             <span class="chip">EEG</span>
             <span class="chip">Machine vision</span>
+            <span class="chip">Microfluidics</span>
           </div>
         </div>
 
         <div class="skillgroup reveal">
-          <h3><span class="ico">🌍</span><span>Languages</span></h3>
+          <h3><span class="ico">🛠️</span><span data-en="Engineering &amp; design" data-de="Technik &amp; Design">Engineering &amp; design</span></h3>
           <div class="chips">
-            <span class="chip chip--lead">German (native)</span>
-            <span class="chip chip--lead">Portuguese (native)</span>
-            <span class="chip chip--lead">English (fluent)</span>
-            <span class="chip chip--lead">Spanish (fluent)</span>
-            <span class="chip">French (proficient)</span>
+            <span class="chip">CAD</span>
+            <span class="chip">Vector graphics</span>
+            <span class="chip">Microcontrollers</span>
+            <span class="chip">Experiment design</span>
           </div>
         </div>
 
         <div class="skillgroup reveal">
-          <h3><span class="ico">🎓</span><span>Education</span></h3>
+          <h3><span class="ico">🌍</span><span data-en="Languages" data-de="Sprachen">Languages</span></h3>
           <div class="chips">
-            <span class="chip">PhD Neuroscience (2021–2026)</span>
-            <span class="chip">M.Sc. Neural &amp; Behavioural Sciences</span>
-            <span class="chip">B.Sc. Cognitive Science</span>
+            <span class="chip chip--lead" data-en="German (native)" data-de="Deutsch (Muttersprache)">German (native)</span>
+            <span class="chip chip--lead" data-en="Portuguese (native)" data-de="Portugiesisch (Muttersprache)">Portuguese (native)</span>
+            <span class="chip chip--lead" data-en="English (fluent)" data-de="Englisch (fließend)">English (fluent)</span>
+            <span class="chip chip--lead" data-en="Spanish (fluent)" data-de="Spanisch (fließend)">Spanish (fluent)</span>
+            <span class="chip" data-en="French (proficient)" data-de="Französisch (gut)">French (proficient)</span>
+          </div>
+        </div>
+
+        <div class="skillgroup reveal">
+          <h3><span class="ico">🎓</span><span data-en="Education" data-de="Ausbildung">Education</span></h3>
+          <div class="chips">
+            <span class="chip" data-en="PhD Neuroscience (2021–2026)" data-de="PhD Neurowissenschaften (2021–2026)">PhD Neuroscience (2021–2026)</span>
+            <span class="chip" data-en="M.Sc. Neural &amp; Behavioural Sciences" data-de="M.Sc. Neural &amp; Behavioural Sciences">M.Sc. Neural &amp; Behavioural Sciences</span>
+            <span class="chip" data-en="B.Sc. Cognitive Science" data-de="B.Sc. Kognitionswissenschaft">B.Sc. Cognitive Science</span>
           </div>
         </div>
 
@@ -388,9 +383,9 @@
   <section class="section" id="contact">
     <div class="container">
       <div class="contact reveal">
-        <span class="section__kicker">Contact</span>
-        <h2>Let's talk</h2>
-        <p>I'm looking for data science and quantitative research roles — internships included — where the core challenge is finding signal in large, noisy data. If that's you, or you'd just like to talk shop, I'd love to hear from you.</p>
+        <span class="section__kicker" data-en="Contact" data-de="Kontakt">Contact</span>
+        <h2 data-en="Let's talk" data-de="Sprechen wir">Let's talk</h2>
+        <p data-en="Interested in collaborations, data science, or the neuroscience of foraging? Or do you have an exciting role to offer — anywhere in the world? I'd love to hear from you." data-de="Interesse an Kooperationen, Data Science oder der Neurowissenschaft der Nahrungssuche? Oder haben Sie eine spannende Stelle zu vergeben — irgendwo auf der Welt? Ich freue mich, von Ihnen zu hören.">Interested in collaborations, data science, or the neuroscience of foraging? Or do you have an exciting role to offer — anywhere in the world? I'd love to hear from you.</p>
         <a href="mailto:desardenbergschmid@gmail.com" class="contact__email">desardenbergschmid@gmail.com</a>
         <div class="contact__socials">
           <a href="mailto:desardenbergschmid@gmail.com" title="Email" aria-label="Email">
@@ -409,79 +404,11 @@
 
   <footer class="footer">
     <div class="container">
-      <p>© <span id="year"></span> Lílian de Sardenberg Schmid · Built with plain HTML &amp; CSS</p>
+      <p>© <span id="year"></span> Lílian de Sardenberg Schmid ·
+        <span data-en="Built with plain HTML &amp; CSS" data-de="Gebaut mit reinem HTML &amp; CSS">Built with plain HTML &amp; CSS</span></p>
     </div>
   </footer>
 
-  <script>
-  /* Self-contained (English-only). No language toggle, no main.js dependency. */
-  (function () {
-    "use strict";
-    var root = document.documentElement;
-    var store = {
-      get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
-      set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
-    };
-
-    /* Theme */
-    var themeBtn = document.getElementById("themeBtn");
-    var storedTheme = store.get("theme");
-    if (storedTheme) root.setAttribute("data-theme", storedTheme);
-    themeBtn.addEventListener("click", function () {
-      var next = root.getAttribute("data-theme") === "light" ? "dark" : "light";
-      root.setAttribute("data-theme", next);
-      store.set("theme", next);
-    });
-
-    /* Typing animation */
-    var typedEl = document.getElementById("typed");
-    var roles = ["Data Scientist", "Statistical Modeller", "ML Practitioner", "PhD Researcher"];
-    var typeTimer = null;
-    (function startTyping() {
-      var i = 0, ch = 0, deleting = false;
-      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-        typedEl.textContent = roles[0];
-        return;
-      }
-      function tick() {
-        var word = roles[i];
-        if (!deleting) {
-          ch++;
-          typedEl.textContent = word.slice(0, ch);
-          if (ch === word.length) { deleting = true; typeTimer = setTimeout(tick, 1600); return; }
-        } else {
-          ch--;
-          typedEl.textContent = word.slice(0, ch);
-          if (ch === 0) { deleting = false; i = (i + 1) % roles.length; }
-        }
-        typeTimer = setTimeout(tick, deleting ? 45 : 90);
-      }
-      tick();
-    })();
-
-    /* Nav: scroll state + mobile menu */
-    var nav = document.getElementById("nav");
-    var burger = document.getElementById("burger");
-    var navLinks = document.getElementById("navLinks");
-    window.addEventListener("scroll", function () {
-      nav.classList.toggle("scrolled", window.scrollY > 20);
-    });
-    burger.addEventListener("click", function () { navLinks.classList.toggle("open"); });
-    navLinks.querySelectorAll("a").forEach(function (a) {
-      a.addEventListener("click", function () { navLinks.classList.remove("open"); });
-    });
-
-    /* Reveal on scroll */
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
-      });
-    }, { threshold: 0.12 });
-    document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
-
-    /* Footer year */
-    document.getElementById("year").textContent = new Date().getFullYear();
-  })();
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>
